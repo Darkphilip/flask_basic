@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Jekyll v4.1.1" />
+  <title>DarkPhilip</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
+  <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css" />
+
+  <!-- Custom styles for this template -->
+  <link href="../static/blog.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5430a3b33e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="#">DarkPhilip</a>
+          </div>
+          <div class="col-4 text-center"></div>
+          <div class="col-4 d-flex justify-content-end align-items-center"></div>
+        </div>
+      </header>
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-10 px-0">
+          <h2 class="display-4 mb-4">
+            <b>힘이 되는 명언</b>
+          </h2>
+          <p class="lead my-3">
+          </p>
+          <p class="lead mb-2">
+            {% if user_email != null %}
+            {{ user_email }} 이메일 주소로 구독중입니다.
+            <a class="btn btn-light" href="/blog/logout" role="button">구독취소</a>
+            {% else %}
+            이메일을 남겨주시면, 블로그 연재시 메일로 송부드립니다.&nbsp;
+            <form action="/blog/set_email" method="post">
+              <div class="form-row">
+                <div class="col">
+                  <input type="email" class="form-control" name="user_email">
+                  <input type="hidden" name="blog_id" value="B">
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn btn-primary">구독</button>
+                </div>
+              </div>
+            </form>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <div class="blog-post">
+            <h5>삶이 있는 한 희망은 있다. _키케로</h5><br>
+            <h5>산다는 것 그것은 치열한 전투이다. _로망로망</h5><br>
+            <h5>하루에 3시간을 걸으면 7년 후에 지구를 한바퀴 돌 수 있다. _사무엘존슨</h5><br>
+            <h5>언제나 현재에 집중할 수 있다면 행복할 것이다. _파울로 코엘료</h5><br>
+            <h5>진정으로 웃으려면 고통을 참아야하며, 나아가 고통을 즐길 줄 알아야 해. _찰리 채플린</h5><br>
+            <h5>직업에서 행복을 찾아라. 아니면 행복이 무엇인지 절대 모를 것이다. _알버트 허버드</h5><br>
+            <h5>신은 용기있는 자를 결코 버리지 않는다. _켄러</h5><br>
+            <h5>
+              행복의 문이 하나 닫히면 다른 문이 열린다. 그러나 우리는 종종 닫힌 문을 멍하니 바라보다가
+              우리를 향해 열린 문을 보지 못하게 된다. _헬렌켈러
+            </h5><br>
+            <h5>피할 수 없으면 즐겨라. _로버트 엘리엇</h5><br>
+            <h5>단순하게 살아라. 현대인은 쓸데없는 절차와 일 때문에 얼마나 복잡한 삶을 살아가는가? _이드리스 샤흐</h5><br>
+            <h5>먼저 자신을 비웃어라. 다른 사람이 당신을 비웃기 전에. _엘사 맥스웰</h5><br>
+            <h5>먼저 핀 꽃은 먼저 진다. 남보다 먼저 공을 세우려고 조급히 서둘 것이 아니다. _채근담</h5><br>
+            <h5>절대 어제를 후회하지 마라. 인생은 오늘의 나 안에 있고 내일은 스스로 만드는 것이다. _L.론허버드</h5><br>
+            <h5>어리석은 자는 멀리서 행복을 찾고, 현명한 자는 자신의 발치에서 행복을 키워간다. _제임스 오펜하임</h5><br>
+            <h5>한번의 실패와 영원한 실패를 혼동하지 마라. _F.스콧 피츠제럴드</h5><br>
+            <h5>좋은 성과를 얻으려면 한 걸음 한 걸음이 힘차고 충실하지 않으면 안된다. _단테</h5><br>
+            <h5>오랫동안 꿈을 그리는 사람은 마침내 그 꿈을 닮아 간다. _앙드레 말로</h5><br>
+            <h5>성공의 비결은 단 한가지, 잘할 수 있는 일에 광적으로 집중하는 것이다. _톰 모나건</h5><br>
+            <h5>자신감 있는 표정을 지으면 자신감이 생긴다. _찰스 다윈</h5><br>
+            <h5>평생 살 것처럼 꿈을 꾸어라. 그리고 내일 죽을 것처럼 오늘을 살아라. _제임스 딘</h5><br>
+            <h5>
+              네 믿음은 네 생각이 된다. 네 생각은 네 말이 된다. 네 말은 네 행동이 된다. 네 행동은
+              네 습관이 된다. 네 습관은 네 가치가 된다. 네 가치는 네 운명이 된다. _간디
+            </h5><br>
+            <h5>절대 포기하지 말라. 당신이 되고 싶은 무언가가 있다면, 그에 대해 자부심을 가져라.
+              <br>당신 자신에게 기회를 주어라. 스스로가 형편없다고 생각하지 말라.
+              <br>그래봐야 아무 것도 얻을 것이 없다. 목표를 높이 세워라. 인생은 그렇게 살아야 한다.<br>_마이크 맥라렌
+            </h5><br>
+          </div>
+        </div>
+        <!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4>About Me</h4>
+            <p class="mb-0">
+              Python으로 웹 개발 공부중인 DarkPhilip입니다. Bootstrap으로 블로그를 처음 만들어 보았습니다.
+              <br/>하루하루 감사한 마음을 가지고 더 나은 미래를 향해 한 걸음씩 나아가고 있습니다.
+            </p>
+          </div>
+          <div class="p-4 bg-light rounded">
+            <h5><i class="fab fa-github"></i>&nbsp;&nbsp;Github</h5>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/Darkphilip">DarkPhilip(YBC)</a></li>
+            </ol>
+          </div>
+        </aside>
+        <!-- /.blog-sidebar -->
+      </div>
+      <!-- /.row -->
+    </main>
+    <!-- /.container -->
+</body>
+</html>
